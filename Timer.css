@@ -1,0 +1,31 @@
+body{background-image: linear-gradient(to right, rgb(255, 0, 109), rgb(71, 0, 235)); }
+.time ul{display: grid;
+		 list-style: none;
+		 row-gap: 10px; column-gap: 10px;
+		 padding-left: 10px;
+		 padding-right: 10px;
+		 grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+		 font-family: "Ubuntu";
+		 font-size: 30px;
+		}
+body {
+  animation: colorchange 50s; 
+  -webkit-animation: colorchange 50s; 
+}
+
+@keyframes colorchange
+{
+  0%   {background: red;}
+  25%  {background: yellow;}
+  50%  {background: blue;}
+  75%  {background: green;}
+  100% {background: red;}
+}
+
+@-webkit-keyframes colorchange 
+  0%   {background: red;}
+  25%  {background: yellow;}
+  50%  {background: blue;}
+  75%  {background: green;}
+  100% {background: red;}
+}		
